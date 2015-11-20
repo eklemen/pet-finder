@@ -1,12 +1,20 @@
-export function routerConfig ($routeProvider) {
-  'ngInject';
-  $routeProvider
-    .when('/', {
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController',
-      controllerAs: 'main'
-    })
-    .otherwise({
-      redirectTo: '/'
-    });
-}
+(function() {
+  'use strict';
+
+  angular
+    .module('chairYg')
+    .config(routeConfig);
+
+  function routeConfig($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'app/main/main.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  }
+
+})();
