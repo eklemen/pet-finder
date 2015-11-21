@@ -1,0 +1,37 @@
+@mixin background-image($url, $attachment:scroll){
+	background: url($url) no-repeat center center $attachment;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+
+.main{
+	.section1{
+		height: 450px;
+		.background{
+			@include background-image('../assets/images/flower-unlit.JPG');
+			display: flex;
+			align-items: center;
+			.headding{
+				margin: 0 auto;
+				h3{
+					font-size: 2em;
+					letter-spacing: 2px;
+					margin: 0;
+				}
+				p{
+					@include cursive(1.5em);
+					margin: 0;
+					@media(min-width: 480px) {
+				    	br{
+				    		display: none
+				    	}
+				    }
+				}
+
+			}
+		}
+	}
+}

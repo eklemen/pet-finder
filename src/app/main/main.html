@@ -1,34 +1,80 @@
-<div layout="vertical" layout-fill>
+<div class="main" layout="vertical" layout-fill>
 
-  <md-content>
+  <md-content flex="100">
     <header>
       <acme-navbar creation-date="main.creationDate"></acme-navbar>
     </header>
 
-    <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p>
-    </section>
-
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-        <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-        </md-card-content>
-        <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
+    <div class="section1">
+      <div layout-fill class="background">
+        <div class="headding" layout="column" layout-align="center center">
+          <h3>Chair You Go</h3>
+          <p>Wedding Chairs <br> & Flower Backdrops</p>
         </div>
-      </md-card>
-    </div>
+      </div>
+    </div> <!-- .section1 -->
+<!--       <div class="row section2">
+        <div class="col-sm-4">    
+          <img src="assets/icons/chair.png" alt="">
+          <h4>Chair Rentals</h4>
+          <p>The popular and elegant Chivari style chairs.</p>
+        </div>
+        <div class="col-sm-4">    
+          <img src="assets/icons/flower.png">
+          <h4>Flower Backdrops</h4>
+          <p>Beautiful handmade backdrop to compliment the pictures and memories of your special event.</p>
+        </div>
+        <div class="col-sm-4">    
+          <i class="glyphicon glyphicon-glass"></i>
+          <h4>Plan Your Next Event</h4>
+          <p>Let us provide the chairs and backdrop for your next event.</p>
+        </div>
+      </div> --> <!-- .section2 -->
+
+ <!--      <div class="row section3">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus risus. Morbi pretium porta dui, ac ultrices purus suscipit in. Donec in egestas ex, eget varius massa. Nullam fermentum sed neque at fermentum. Duis quis erat ac ipsum rutrum auctor at eu lacus. Fusce volutpat quis magna in aliquet. Proin a massa metus. Quisque tortor mi, volutpat in ligula ut, aliquet commodo neque. Donec lacinia suscipit nisi.</p>
+        </div>
+      </div> --> <!-- .section3 -->
+
+<!--       <div class="row section4">
+        <form action="//formspree.io/ejklemen@gmail.com"
+              method="POST">
+            <div>
+              <input id="inp1" type="text" ng-model="name" name="name" />
+              <label for="inp1"><span>name</span></label>
+            </div>
+            
+            <div>
+              <input id="inp2" type="email" ng-model="email" name="_replyto" />
+              <label for="inp2"><span>Email</span></label>
+          </div>
+
+            <div>
+              <input id="inp3" type="text" name="_subject" />
+              <label for="inp3"><span>Subject</span></label>
+          </div>
+
+            <textarea  id="inp3" type="text" name="message" placeholder="Enter your message here..." ></textarea> 
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="#" />
+            <input type="submit" value="Send">
+        </form>
+
+      </div> -->
+
+    </div> <!-- .main -->
+
+    <!-- <acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" /> 
+      <p class="animated infinite pulse" >
+          <button type="button" class="btn btn-lg btn-success">
+          Splendid Toastr</button>
+      </p>
+    -->
   </md-content>
 
 </div>
+
+<!-- <p>
+        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
+      </p> -->
