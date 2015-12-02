@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('chairYg')
+    .module('ekSites')
     .config(routeConfig);
 
   function routeConfig($routeProvider) {

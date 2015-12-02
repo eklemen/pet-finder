@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('chairYg')
+    .module('ekSites')
     .directive('acmeNavbar', acmeNavbar);
 
   /** @ngInject */

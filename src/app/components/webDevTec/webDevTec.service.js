@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-      .module('chairYg')
+      .module('ekSites')
       .service('webDevTec', webDevTec);
 
   /** @ngInject */

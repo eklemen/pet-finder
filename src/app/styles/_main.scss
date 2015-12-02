@@ -11,7 +11,6 @@
 	.section1{
 		height: 450px;
 		.background{
-			@include background-image('../assets/images/flower-unlit.JPG');
 			display: flex;
 			align-items: center;
 			.headding{

@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('chairYg')
+    .module('ekSites')
     .constant('malarkey', malarkey)
     .constant('moment', moment);
 
