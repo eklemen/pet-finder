@@ -9,12 +9,5 @@
   function MainController() {
     var self = this;
     
-
-
-    // self.classAnimation = '';
-    // function showToastr() {
-    //   self.classAnimation = '';
-    // }
-
   }
 })();
