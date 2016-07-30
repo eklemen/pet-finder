@@ -6,7 +6,12 @@
     .config(config);
 
   /** @ngInject */
-  function config() {
+  function config($httpProvider) {
+  	$httpProvider.defaults.useXDomain = true;
+    $httpProvider.defaults.headers.common = {};
+    $httpProvider.defaults.headers.post = {};
+    $httpProvider.defaults.headers.put = {};
+    $httpProvider.defaults.headers.patch = {};
   }
 
 })();
