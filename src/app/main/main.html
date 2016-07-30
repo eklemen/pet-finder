@@ -1,31 +1,56 @@
 <div class="main">
 
   <div>
-    <header>
-      <navbar></navbar>
-    </header>
+  <header>
+    <navbar></navbar>
+  </header>
 
-    <div class="section1">
-        <div class="headding">
-          <h3>Pet Finder</h3>
-        </div>
+  <div class="section1">
+    <div class="headding">
+      <h3>Pet Finder</h3>
+    </div>
 
-        <div class="search-inputs">
-          <div class="input-group">
-            <label for="location">Location</label>        
-            <input id="location" class="form-control" type="text" data-ng-model="main.location">
-          </div>
-          <button data-ng-click="main.updateLocation(main.location)">Search Location</button>
+    <div class="search-inputs">
+      <div class="by-location search-field">
+        <div class="input-group">
+          <label for="location">Location</label>        
+          <input id="location" class="form-control" type="text" data-ng-model="main.location">
         </div>
-        <div data-ng-repeat="pet in main.pets">
-          <p>{{pet.name.$t}}</p>
+        <button data-ng-click="main.updateLocation(main.location)">Search Location</button>
+      </div>
+
+      <div class="by-random search-field">
+        <div class="input-group">
+        <label for="">I'll take any pet!</label>        
+        <!-- <input id="location" class="form-control" type="text" data-ng-model="main.random"> -->
         </div>
-    </div> 
+        <button data-ng-click="main.getRandom()">Find random pet</button>
+      </div>
+
+      <!-- <div class="by-breed">
+        <div class="input-group">
+          <label for="animal-type">Location</label>        
+          <select class='form-control' name="animals" id="animal-type" data-ng-model="main.animalType">
+            <option data-ng-repeat="animal in main.animals" 
+                    data-ng-value="{{animal.value}}"
+                    data-ng-selected="main.animalType === animal.value">
+                    {{animal.type}}</option>
+          </select>
+          <button data-ng-click="main.getBreeds(main.animalType)">Find random pet</button>
+        </div>
+      </div> -->
+      
+    </div>
+    <div data-ng-repeat="pet in main.pets" class="col-sm-6 col-md-4 col-lg-3">
+      <img class="col-sm-4" data-ng-src="{{pet.media.photos.photo[1].$t}}" alt="">
+      <div class="description col-sm-8">
+        <h3>Name: {{pet.name.$t}}</h3>
+        <p>Location: {{pet.contact.city.$t + pet.contact.state.$t}}</p>  
+      </div>
+      
+    </div>
+  </div> 
 
   </div>
 
 </div> <!-- .main -->
-
-<!-- <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p> -->

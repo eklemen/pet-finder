@@ -19,7 +19,20 @@
 					method: 'GET',
 					isArray: true	
 				}
-			)
+			),
+			randomPet: $resource('http://api.petfinder.com/pet.getRandom?key=1f0c7f48315c13e63b7b7923cacc7959&format=json&output=full', {}, 
+				{
+					method: 'GET',
+					isArray: true	
+				}
+			),
+			// coming back to this later
+			// getBreeds: $resource('http://api.petfinder.com/breed.list?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {animal: '@animal'}, 
+			// 	{
+			// 		method: 'GET',
+			// 		isArray: true	
+			// 	}
+			// ),
 		}
 	}
 
