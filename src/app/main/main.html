@@ -42,7 +42,9 @@
       
     </div>
     <div data-ng-repeat="pet in main.pets" class="col-sm-6 col-md-4 col-lg-3">
-      <img class="col-sm-4" data-ng-src="{{pet.media.photos.photo[1].$t}}" alt="">
+      <a data-ng-href="/#{{pet.id.$t}}">
+        <img class="col-sm-4" data-ng-src="{{pet.media.photos.photo[1].$t}}" alt="">
+      </a>
       <div class="description col-sm-8">
         <h3>Name: {{pet.name.$t}}</h3>
         <p>Location: {{pet.contact.city.$t + pet.contact.state.$t}}</p>  

@@ -12,6 +12,10 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .when('/:id', {
+        template: '<pet-detail></pet-detail>'
+
+      })
       .otherwise({
         redirectTo: '/'
       });

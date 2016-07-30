@@ -26,6 +26,12 @@
 					isArray: true	
 				}
 			),
+			singlePet: $resource('http://api.petfinder.com/pet.get?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {id: '@id'}, 
+				{
+					method: 'GET',
+					isArray: true	
+				}
+			)
 			// coming back to this later
 			// getBreeds: $resource('http://api.petfinder.com/breed.list?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {animal: '@animal'}, 
 			// 	{
