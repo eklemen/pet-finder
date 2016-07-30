@@ -7,7 +7,7 @@
 
   /** @ngInject */
   function MainController() {
-    var self = this;
+    var vm = this;
     
   }
 })();
