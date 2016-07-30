@@ -7,7 +7,15 @@
 
     <div class="section1">
         <div class="headding">
-          <h3>Company Name</h3>
+          <h3>Pet Finder</h3>
+        </div>
+
+        <div class="search-inputs">
+          <div class="input-group">
+            <label for="location">Location</label>        
+            <input id="location" class="form-control" type="text" data-ng-model="main.location">
+          </div>
+          <button data-ng-click="main.updateLocation(main.location)">Search Location</button>
         </div>
         <div data-ng-repeat="pet in main.pets">
           <p>{{pet.name.$t}}</p>

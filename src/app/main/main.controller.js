@@ -9,6 +9,7 @@
   function MainController(GetPets) {
     var vm = this;
     vm.pets = [];
+    vm.location = 'orlando,fl'
 
     // vm.byLocation = function(){
     // 	GetPets.get({}, function(response){
@@ -16,18 +17,18 @@
     // 		console.log(response);
     // 	})
     // }
-
-    vm.byLocation = GetPets.byLocation.get({location: '33413'}, function(response){
-    	console.log(response)
+	GetPets.byLocation.get({location: vm.location}, function(response){
+		console.log(response)
 		vm.pets = response.petfinder.pets.pet
-    });
-
-    // var handleSuccess =  function(data, status) {
-    // 	vm.pets = data.petfinder.pets.pet;
-    // 	console.log(vm.pets);
-    // }
-
-    // GetPets.fetchAllPets().success(handleSuccess);
+	});
+	
+    vm.updateLocation = function(options){
+    	debugger;
+    	GetPets.byLocation.get({location: options}, function(response){
+    		console.log(response)
+			vm.pets = response.petfinder.pets.pet
+    	});
+    }
     
   }
 })();
