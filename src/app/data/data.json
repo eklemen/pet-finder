@@ -1,0 +1,15 @@
+[{
+	"test": "data1",
+	"array": ["item1", "item2"]
+
+},
+{
+	"test": "data2",
+	"array": ["item3", "item4"]
+
+},
+{
+	"test": "data3",
+	"array": ["item5", "item6"]
+
+}]

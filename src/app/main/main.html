@@ -6,12 +6,13 @@
     </header>
 
     <div class="section1">
-      <div class="background">
         <div class="headding">
           <h3>Company Name</h3>
         </div>
-      </div>
-    </div> <!-- .section1  -->
+        <div data-ng-repeat="pet in main.pets">
+          <p>{{pet.test}}</p>
+        </div>
+    </div> 
 
   </div>
 
