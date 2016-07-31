@@ -31,14 +31,19 @@
 					method: 'GET',
 					isArray: true	
 				}
-			)
-			// coming back to this later
-			// getBreeds: $resource('http://api.petfinder.com/breed.list?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {animal: '@animal'}, 
-			// 	{
-			// 		method: 'GET',
-			// 		isArray: true	
-			// 	}
-			// ),
+			),
+			getBreeds: $resource('http://api.petfinder.com/breed.list?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {animal: '@animal'}, 
+				{
+					method: 'GET',
+					isArray: true	
+				}
+			),
+			byBreed: $resource('http://api.petfinder.com/pet.find?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {location: '@loc', breed: '@breed'}, 
+				{
+					method: 'GET',
+					isArray: true	
+				}
+			),
 		}
 	}
 

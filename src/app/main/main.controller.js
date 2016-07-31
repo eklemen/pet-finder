@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController(GetPets) {
+  function MainController($scope, GetPets) {
     var vm = this;
     vm.pets = [];
     vm.location = 'orlando,fl';
@@ -23,15 +23,11 @@
             value: 'bird',
             type: 'Bird'
         }
-
     ];
+    vm.animalType;
+    vm.breeds = [];
+    vm.breedSelected;
 
-    // vm.byLocation = function(){
-    //  GetPets.get({}, function(response){
-    //      vm.pets = response;
-    //      console.log(response);
-    //  })
-    // }
     GetPets.byLocation.get({location: vm.location}, function(response){
         vm.pets = response.petfinder.pets.pet;
     });
@@ -48,13 +44,18 @@
         });
     }
 
-    // want to use this method as a filter for the breeds
-    // vm.getBreeds = function(options){
-    //     GetPets.getBreeds.get({animal: vm.animalType}, function(response){
-    //         console.log(response)
-    //         vm.pets = response.petfinder.breeds.breed;
-    //     });
-    // }
+    vm.getBreeds = function(options){
+        GetPets.getBreeds.get({animal: vm.animalType.toLowerCase()}, function(response){
+            vm.breeds = response.petfinder.breeds.breed;
+        });
+    }
+
+    vm.byBreed = function(options){
+        GetPets.byBreed.get({location: vm.location, breed: options}, function(response){
+            debugger;
+            vm.pets = response.petfinder.pets.pet;
+        });
+    }
     
   }
 })();

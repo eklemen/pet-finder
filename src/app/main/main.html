@@ -16,7 +16,7 @@
           <label for="location">Location</label>        
           <input id="location" class="form-control" type="text" data-ng-model="main.location">
         </div>
-        <button data-ng-click="main.updateLocation(main.location)">Search Location</button>
+        <button class="btn" data-ng-click="main.updateLocation(main.location)">Search Location</button>
       </div>
 
       <div class="by-random search-field">
@@ -24,21 +24,40 @@
         <label for="">I'll take any pet!</label>        
         <!-- <input id="location" class="form-control" type="text" data-ng-model="main.random"> -->
         </div>
-        <button data-ng-click="main.getRandom()">Find random pet</button>
+        <button class="btn" data-ng-click="main.getRandom()">Find random pet</button>
       </div>
 
-      <!-- <div class="by-breed">
+      <div class="by-breed search-field">
+        <h5>Search by Breed</h5>
         <div class="input-group">
-          <label for="animal-type">Location</label>        
-          <select class='form-control' name="animals" id="animal-type" data-ng-model="main.animalType">
+          <label for="animal-type">Animal Type</label>        
+          <select class='form-control'
+                  name="animals"
+                  id="animal-type"
+                  data-ng-model="main.animalType"
+                  data-ng-change="main.getBreeds(main.animalType)">
             <option data-ng-repeat="animal in main.animals" 
                     data-ng-value="{{animal.value}}"
                     data-ng-selected="main.animalType === animal.value">
                     {{animal.type}}</option>
           </select>
-          <button data-ng-click="main.getBreeds(main.animalType)">Find random pet</button>
         </div>
-      </div> -->
+
+        <div data-ng-if="main.animalType.length > 0" class="input-group">
+          <label for="breed-type">Animal Type</label>        
+          <select class='form-control'
+                  name="breeds"
+                  id="breed-type"
+                  data-ng-model="main.breedSelected"
+                  data-ng-change="main.byBreed(main.breedSelected)">
+            <option data-ng-repeat="breed in main.breeds" 
+                    data-ng-value="{{breed.$t.JSONstringify}}"
+                    data-ng-selected="main.breed === breed.$t">
+                    {{breed.$t}}</option>
+          </select>
+          <!-- <button data-ng-click="main.getBreeds(main.animalType)">Animal Type</button> -->
+        </div>
+      </div>
       
     </div>
     <div data-ng-repeat="pet in main.pets" class="col-sm-6 col-md-4 col-lg-3">
