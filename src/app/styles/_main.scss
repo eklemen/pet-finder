@@ -1,5 +1,20 @@
 .main{
 	.search-field{
-		display: inline-block;
+		height: 100%;
+		min-height: 120px;
+		h5, label{
+			font-size: 16px;
+		}
+		.form-control{
+			margin: 10px auto;
+		}
+		.btn{
+			margin: 8px auto;
+		}
+	}
+	.results{
+		height: 120px;
+		overflow: hidden;
+		margin: 20px auto;
 	}
 }
