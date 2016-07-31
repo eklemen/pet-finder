@@ -7,11 +7,9 @@
     .factory('GetPets', GetPets);
 
 	/** @ngInject */
-	function GetPets($resource, $http) {
-		var obj = {};
-		var baseUrl = 'https://www.petfinder.com/developers/api-docs';
-		var apiKey = '1f0c7f48315c13e63b7b7923cacc7959';
-		var location = '32817';
+	function GetPets($resource) {
+		// var baseUrl = 'https://www.petfinder.com/developers/api-docs';
+		// var apiKey = '1f0c7f48315c13e63b7b7923cacc7959';
 
 		return {
 			byLocation: $resource('http://api.petfinder.com/pet.find?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {location: '@loc'}, 
@@ -39,6 +37,12 @@
 				}
 			),
 			byBreed: $resource('http://api.petfinder.com/pet.find?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {location: '@loc', breed: '@breed'}, 
+				{
+					method: 'GET',
+					isArray: true	
+				}
+			),
+			byAnimal: $resource('http://api.petfinder.com/pet.find?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {location: '@loc', animal: '@animal'}, 
 				{
 					method: 'GET',
 					isArray: true	
