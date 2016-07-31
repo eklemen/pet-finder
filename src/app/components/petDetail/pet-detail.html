@@ -1,8 +1,9 @@
-<div>
-	You have found a pet {{vm.test}}
-	<<!-- img class="col-sm-4" data-ng-src="{{pet.media.photos.photo[1].$t}}" alt="">
-    <div class="description col-sm-8">
-        <h3>Name: {{pet.name.$t}}</h3>
-        <p>Location: {{pet.contact.city.$t + pet.contact.state.$t}}</p>  
-    </div> -->
+<div class="container">
+	<div class="row">
+		<img class="col-sm-4 col-sm-offset-4" data-ng-src="{{vm.pet.media.photos.photo[2].$t}}" alt="">
+	    <div class="description col-sm-6 col-sm-offset-3 text-center">
+	        <h3>Name: {{vm.pet.name.$t}}</h3>
+	        <p><strong>Location:</strong> {{vm.pet.contact.city.$t + vm.pet.contact.state.$t}}</p>  
+	    </div>
+    </div>
 </div>

@@ -20,12 +20,9 @@ function petDetail() {
   /** @ngInject */
   function SinglePet($routeParams, GetPets) {
     var vm = this;
-    debugger;
     vm.petId = $routeParams.id;
     vm.pet = [];
-    vm.test = 'some detail'
     GetPets.singlePet.get({id: vm.petId}, function(response){
-        console.log(response);
         vm.pet = response.petfinder.pet;
     });
   }
