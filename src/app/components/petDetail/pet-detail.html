@@ -1,11 +1,8 @@
-<header>
-    <navbar></navbar>
-</header>
-<a href="#/"><strong>Go Back</strong></a>
-<div class="container">
+<a class="go-back" href="#/"><strong>Go Back</strong></a>
+<div class="container pet-detail">
 	<div class="row">
-		<img class="col-sm-4 col-sm-offset-4" data-ng-src="{{vm.pet.media.photos.photo[2].$t}}" alt="">
-	    <div class="description col-sm-6 col-sm-offset-3 text-center">
+		<img class="col-sm-4 col-sm-offset-2 thumbnail" data-ng-src="{{vm.pet.media.photos.photo[2].$t}}" alt="">
+	    <div class="description col-sm-6 text-center">
 	        <h3>Name: {{vm.pet.name.$t}}</h3>
 	        <p><strong>Location:</strong> {{vm.pet.contact.city.$t + vm.pet.contact.state.$t}}</p>  
 	    </div>

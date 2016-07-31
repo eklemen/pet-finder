@@ -1,0 +1,19 @@
+.go-back{
+	border: solid #999 2px;
+	font-size: 18px;
+	text-align: center;
+	padding: 8px;
+	border-radius: 5px;
+	margin: -55px 10px 0 10px;
+	position: absolute;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.pet-detail{
+	margin-top: 70px;
+	.thumbnail{
+		max-width: 250px;
+		margin: 0 auto;
+	}
+}
