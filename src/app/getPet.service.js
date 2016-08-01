@@ -8,46 +8,48 @@
 
 	/** @ngInject */
 	function GetPets($resource) {
-		// var baseUrl = 'https://www.petfinder.com/developers/api-docs';
-		// var apiKey = '1f0c7f48315c13e63b7b7923cacc7959';
+		// All requests are returned in JSON format as Array
+
+		var baseUrl = 'http://api.petfinder.com/';
+		var key = '?key=1f0c7f48315c13e63b7b7923cacc7959&format=json'
 
 		return {
-			byLocation: $resource('http://api.petfinder.com/pet.find?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {location: '@loc'}, 
+			byLocation: $resource( baseUrl + 'pet.find' + key, {location: '@loc'}, 
 				{
 					method: 'GET',
 					isArray: true	
 				}
 			),
-			randomPet: $resource('http://api.petfinder.com/pet.getRandom?key=1f0c7f48315c13e63b7b7923cacc7959&format=json&output=full', {}, 
+			randomPet: $resource( baseUrl + 'pet.getRandom' + key + '&output=full', {}, 
 				{
 					method: 'GET',
 					isArray: true	
 				}
 			),
-			singlePet: $resource('http://api.petfinder.com/pet.get?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {id: '@id'}, 
+			singlePet: $resource( baseUrl + 'pet.get' + key, {id: '@id'}, 
 				{
 					method: 'GET',
 					isArray: true	
 				}
 			),
-			getBreeds: $resource('http://api.petfinder.com/breed.list?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {animal: '@animal'}, 
+			getBreeds: $resource( baseUrl + 'breed.list' + key, {animal: '@animal'}, 
 				{
 					method: 'GET',
 					isArray: true	
 				}
 			),
-			byBreed: $resource('http://api.petfinder.com/pet.find?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {location: '@loc', breed: '@breed'}, 
+			byBreed: $resource( baseUrl + 'pet.find' + key, {location: '@loc', breed: '@breed'}, 
 				{
 					method: 'GET',
 					isArray: true	
 				}
 			),
-			byAnimal: $resource('http://api.petfinder.com/pet.find?key=1f0c7f48315c13e63b7b7923cacc7959&format=json', {location: '@loc', animal: '@animal'}, 
+			byAnimal: $resource( baseUrl + 'pet.find' + key, {location: '@loc', animal: '@animal'}, 
 				{
 					method: 'GET',
 					isArray: true	
 				}
-			),
+			)
 		}
 	}
 

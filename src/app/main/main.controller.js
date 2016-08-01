@@ -28,14 +28,6 @@
     vm.numPerPage = 10;
     vm.maxSize = 5;
 
-
-    
-    $scope.$watch('MainController.currentPage + MainController.numPerPage', function() {
-        var begin = ((vm.currentPage - 1) * vm.numPerPage);
-        var end = begin + vm.numPerPage;
-        vm.filteredPets = vm.pets.slice(begin, end);
-    });
-
     vm.animals = [
         {
             value: 'barnyard',
@@ -68,23 +60,32 @@
         }
     ];
 
+    // This is used with the ui-bootstrap pagination directive to keep track of what
+    // results show up on each page.
     $scope.$watch('main.currentPage + main.numPerPage', function() {
         var begin = ((vm.currentPage - 1) * vm.numPerPage);
         var end = begin + vm.numPerPage;
         vm.filteredPets = vm.pets.slice(begin, end);
     });
 
+
+    // We will run this after grabbing the whole list of pets to filter down just
+    // the pets to show per page.
     var selectPageGroup = function(){
         var begin = ((vm.currentPage - 1) * vm.numPerPage);
         var end = begin + vm.numPerPage;
         return vm.filteredPets = vm.pets.slice(begin, end);
     }
 
+    // We want to run GetPets when the page loads to give the users a list of
+    // pets right away to start viewing.
     GetPets.byLocation.get({location: vm.location}, function(response){
         vm.pets = response.petfinder.pets.pet;
         selectPageGroup();
     });
-    
+
+
+    // Calls to GetPets factory
     vm.updateLocation = function(options){
         GetPets.byLocation.get({location: options}, function(response){
             vm.pets = response.petfinder.pets.pet;
@@ -95,6 +96,8 @@
     vm.getRandom = function(){
         GetPets.randomPet.get(function(response){
             vm.randomPetId = response.petfinder.pet.id.$t;
+            // When selecting a random animal the location needs to change to 
+            // show our pets-detail directive since only 1 will be returned
             $location.url(vm.randomPetId);
         });
     }

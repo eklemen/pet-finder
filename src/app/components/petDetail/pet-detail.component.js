@@ -22,6 +22,7 @@ function petDetail() {
     var vm = this;
     vm.petId = $routeParams.id;
     vm.pet = [];
+    // Once we have the petId, make a call to get info for just that pet
     GetPets.singlePet.get({id: vm.petId}, function(response){
         vm.pet = response.petfinder.pet;
     });

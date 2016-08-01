@@ -1,14 +1,13 @@
 (function() {
-  'use strict';
+	'use strict';
 
-  angular
-    .module('ekSites')
-    .run(runBlock);
+	angular
+		.module('ekSites')
+		.run(runBlock);
 
-  /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
-  }
+	/** @ngInject */
+	function runBlock($log) {
+		$log.info('Thanks for viewing!')
+	}
 
 })();
