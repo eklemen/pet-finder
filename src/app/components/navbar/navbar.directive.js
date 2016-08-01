@@ -3,10 +3,10 @@
 
   angular
     .module('ekSites')
-    .directive('acmeNavbar', acmeNavbar);
+    .directive('navbar', navbar);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function navbar() {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
@@ -19,7 +19,6 @@
 
     /** @ngInject */
     function NavbarController() {
-      var vm = this;
     }
   }
 

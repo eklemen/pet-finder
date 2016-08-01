@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('ekSites', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngAria', 'ngResource', 'ngRoute', 'ngMaterial']);
+    .module('ekSites', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngAria', 'ngResource', 'ngRoute', 'ui.bootstrap']);
 
 })();

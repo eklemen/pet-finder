@@ -1,0 +1,390 @@
+{
+  "@encoding": "iso-8859-1",
+  "@version": "1.0",
+  "petfinder": {
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "lastOffset": {
+      "$t": "25"
+    },
+    "pets": {
+      "pet": [
+        {
+          "options": {
+            "option": [
+              {
+                "$t": "hasShots"
+              },
+              {
+                "$t": "altered"
+              },
+              {
+                "$t": "noCats"
+              },
+              {
+                "$t": "housetrained"
+              }
+            ]
+          },
+          "status": {
+            "$t": "A"
+          },
+          "contact": {
+            "phone": {
+              "$t": "(407)952-1858   "
+            },
+            "state": {
+              "$t": "FL"
+            },
+            "address2": {},
+            "email": {
+              "$t": "Savealifepetres@aol.com"
+            },
+            "city": {
+              "$t": "Sanford"
+            },
+            "zip": {
+              "$t": "32817"
+            },
+            "fax": {},
+            "address1": {
+              "$t": "P.O box 623341"
+            }
+          },
+          "age": {
+            "$t": "Adult"
+          },
+          "size": {
+            "$t": "M"
+          },
+          "media": {
+            "photos": {
+              "photo": [
+                {
+                  "@size": "pnt",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/1/?bust=1453408655&width=60&-pnt.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "fpm",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/1/?bust=1453408655&width=95&-fpm.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "x",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/1/?bust=1453408655&width=500&-x.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "pn",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/1/?bust=1453408655&width=300&-pn.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "t",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/1/?bust=1453408655&width=50&-t.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "pnt",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/2/?bust=1453408656&width=60&-pnt.jpg",
+                  "@id": "2"
+                },
+                {
+                  "@size": "fpm",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/2/?bust=1453408656&width=95&-fpm.jpg",
+                  "@id": "2"
+                },
+                {
+                  "@size": "x",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/2/?bust=1453408656&width=500&-x.jpg",
+                  "@id": "2"
+                },
+                {
+                  "@size": "pn",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/2/?bust=1453408656&width=300&-pn.jpg",
+                  "@id": "2"
+                },
+                {
+                  "@size": "t",
+                  "$t": "http://photos.petfinder.com/photos/pets/34296280/2/?bust=1453408656&width=50&-t.jpg",
+                  "@id": "2"
+                }
+              ]
+            }
+          },
+          "id": {
+            "$t": "34296280"
+          },
+          "shelterPetId": {},
+          "breeds": {
+            "breed": [
+              {
+                "$t": "Labrador Retriever"
+              },
+              {
+                "$t": "Terrier"
+              }
+            ]
+          },
+          "name": {
+            "$t": "Berry"
+          },
+          "sex": {
+            "$t": "F"
+          },
+          "description": {
+            "$t": "We are in NO way affiliated with Petsmart* *Do NOT Call Petsmart* Visit us at www.savealifepetrescue.org for ANY QUESTIONS and/or INFORMATION on our ADOPTION PROCESS. *Click *Adoptions* *This pet will be available for adoption this Saturday at the Petsmart in Oviedo* *THIS PET CANNOT BE ADOPTED PRIOR TO SATURDAY\nBerry is a 2 year old Lab/Terrier. She is fixed, current on shots and housebroken. She is ok with other dogs and  kids, She is ready for a loving and forever home. The adoption donation is $75 This pet will be at the PETSMART in OVIEDO this Saturday from  1:00pm-4:00pm . All adoptions are on a  first come first serve basis. (Granted your adoption application is  approved) We do not take deposits or put holds on animals. 1115 Vidina Place, OVIEDO FL 32762 All adoption applications and contracts and agreements can ONLY be  filled out on Saturdays and Sundays. We do NOT have any online paperwork  to do in advance."
+          },
+          "mix": {
+            "$t": "yes"
+          },
+          "shelterId": {
+            "$t": "FL668"
+          },
+          "lastUpdate": {
+            "$t": "2016-01-21T20:37:36Z"
+          },
+          "animal": {
+            "$t": "Dog"
+          }
+        },
+        {
+          "options": {
+            "option": [
+              {
+                "$t": "hasShots"
+              },
+              {
+                "$t": "altered"
+              }
+            ]
+          },
+          "status": {
+            "$t": "A"
+          },
+          "contact": {
+            "phone": {
+              "$t": "(407)952-1858   "
+            },
+            "state": {
+              "$t": "FL"
+            },
+            "address2": {},
+            "email": {
+              "$t": "Savealifepetres@aol.com"
+            },
+            "city": {
+              "$t": "Sanford"
+            },
+            "zip": {
+              "$t": "32817"
+            },
+            "fax": {},
+            "address1": {
+              "$t": "P.O box 623341"
+            }
+          },
+          "age": {
+            "$t": "Baby"
+          },
+          "size": {
+            "$t": "M"
+          },
+          "media": {
+            "photos": {
+              "photo": [
+                {
+                  "@size": "pnt",
+                  "$t": "http://photos.petfinder.com/photos/pets/34884136/1/?bust=1460511025&width=60&-pnt.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "fpm",
+                  "$t": "http://photos.petfinder.com/photos/pets/34884136/1/?bust=1460511025&width=95&-fpm.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "x",
+                  "$t": "http://photos.petfinder.com/photos/pets/34884136/1/?bust=1460511025&width=500&-x.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "pn",
+                  "$t": "http://photos.petfinder.com/photos/pets/34884136/1/?bust=1460511025&width=300&-pn.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "t",
+                  "$t": "http://photos.petfinder.com/photos/pets/34884136/1/?bust=1460511025&width=50&-t.jpg",
+                  "@id": "1"
+                }
+              ]
+            }
+          },
+          "id": {
+            "$t": "34884136"
+          },
+          "shelterPetId": {},
+          "breeds": {
+            "breed": [
+              {
+                "$t": "Plott Hound"
+              },
+              {
+                "$t": "Boxer"
+              }
+            ]
+          },
+          "name": {
+            "$t": "Libby"
+          },
+          "sex": {
+            "$t": "F"
+          },
+          "description": {
+            "$t": "We are in NO way affiliated with Petsmart*\n*Do NOT Call Petsmart*\nVisit us at www.savealifepetrescue.org for ANY QUESTIONS and/or INFORMATION on our ADOPTION PROCESS. *Click *Adoptions*\n*This pet will be available for adoption this Saturday and Sunday at the Petsmart in Oviedo*\n*THIS PET CANNOT BE ADOPTED PRIOR TO SATURDAY\nThis is 1 of 2 in this litter of 16 week old mix puppies. They come with 2 sets of vaccinations, 2 doses of wormer, flea, heart guard prevention and Spay/Neuter.\nThe adoption donation is $300.\nThis pet will be at the PETSMART in OVIEDO this Saturday from 1pm-3:30pm and Sunday from 1pm-3:30pm. All adoptions are on a first come first serve basis. (Granted your adoption application is approved) We do not take deposits or put holds on animals.\n1115 Vidina Place, OVIEDO FL 32762\nAll adoption applications and contracts and agreements can ONLY be filled out on Saturdays and Sundays. We do NOT have any online paperwork to do in advance."
+          },
+          "mix": {
+            "$t": "yes"
+          },
+          "shelterId": {
+            "$t": "FL668"
+          },
+          "lastUpdate": {
+            "$t": "2016-04-19T01:02:10Z"
+          },
+          "animal": {
+            "$t": "Dog"
+          }
+        },
+        {
+          "options": {
+            "option": [
+              {
+                "$t": "hasShots"
+              },
+              {
+                "$t": "altered"
+              },
+              {
+                "$t": "housetrained"
+              }
+            ]
+          },
+          "status": {
+            "$t": "A"
+          },
+          "contact": {
+            "phone": {
+              "$t": "(407)952-1858   "
+            },
+            "state": {
+              "$t": "FL"
+            },
+            "address2": {},
+            "email": {
+              "$t": "Savealifepetres@aol.com"
+            },
+            "city": {
+              "$t": "Sanford"
+            },
+            "zip": {
+              "$t": "32817"
+            },
+            "fax": {},
+            "address1": {
+              "$t": "P.O box 623341"
+            }
+          },
+          "age": {
+            "$t": "Adult"
+          },
+          "size": {
+            "$t": "M"
+          },
+          "media": {
+            "photos": {
+              "photo": [
+                {
+                  "@size": "pnt",
+                  "$t": "http://photos.petfinder.com/photos/pets/35184531/1/?bust=1463973592&width=60&-pnt.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "fpm",
+                  "$t": "http://photos.petfinder.com/photos/pets/35184531/1/?bust=1463973592&width=95&-fpm.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "x",
+                  "$t": "http://photos.petfinder.com/photos/pets/35184531/1/?bust=1463973592&width=500&-x.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "pn",
+                  "$t": "http://photos.petfinder.com/photos/pets/35184531/1/?bust=1463973592&width=300&-pn.jpg",
+                  "@id": "1"
+                },
+                {
+                  "@size": "t",
+                  "$t": "http://photos.petfinder.com/photos/pets/35184531/1/?bust=1463973592&width=50&-t.jpg",
+                  "@id": "1"
+                }
+              ]
+            }
+          },
+          "id": {
+            "$t": "35184531"
+          },
+          "shelterPetId": {},
+          "breeds": {
+            "breed": [
+              {
+                "$t": "Cattle Dog"
+              },
+              {
+                "$t": "Xoloitzcuintle (Mexican Hairless)"
+              }
+            ]
+          },
+          "name": {
+            "$t": "Boo"
+          },
+          "sex": {
+            "$t": "M"
+          },
+          "description": {
+            "$t": "We are in NO way affiliated with Petsmart*\n*Do NOT Call Petsmart*\nVisit us at www.savealifepetrescue.org for ANY QUESTIONS and/or INFORMATION on our ADOPTION PROCESS. *Click *Adoptions*\n*This pet will be available for adoption on this Saturday and  \nSunday at the Petsmart in Oviedo* \n\n*THIS PET CANNOT BE ADOPTED PRIOR TO SATURDAY.\nBoo is a 4 year old cattledog/Xolo mix. He is house trained and  is good with other dogs, and kids. They come with 2 sets of vaccinations, 2 doses of wormer, flea, heart guard prevention and Spay/Neuter.\nThe adoption donation is $75.\nThis pet will be at the PETSMART in OVIEDO on Saturday from 1pm-3:30pm and Sunday from 1pm-3:30pm. All adoptions are on a first come first serve basis. (Granted your adoption application is approved) We do not take deposits or put holds on animals.\n1115 Vidina Place, OVIEDO FL 32762\nAll adoption applications and contracts and agreements can ONLY be filled out on Saturdays and Sundays. We do NOT have any online paperwork to do in advance.."
+          },
+          "mix": {
+            "$t": "yes"
+          },
+          "shelterId": {
+            "$t": "FL668"
+          },
+          "lastUpdate": {
+            "$t": "2016-05-23T03:59:03Z"
+          },
+          "animal": {
+            "$t": "Dog"
+          }
+        }
+      ]
+    },
+    "header": {
+      "timestamp": {
+        "$t": "2016-07-30T16:08:07Z"
+      },
+      "status": {
+        "message": {},
+        "code": {
+          "$t": "100"
+        }
+      },
+      "version": {
+        "$t": "0.1"
+      }
+    },
+    "@xsi:noNamespaceSchemaLocation": "http://api.petfinder.com/schemas/0.9/petfinder.xsd"
+  }
+}

@@ -18,10 +18,11 @@ function listFiles() {
 
   return wiredep(wiredepOptions).js
     .concat([
+      path.join(conf.paths.src, '../bower_components/jquery/dist/jquery.js'),
       path.join(conf.paths.src, '/app/**/*.module.js'),
       path.join(conf.paths.src, '/app/**/*.js'),
       path.join(conf.paths.src, '/**/*.spec.js'),
-      path.join(conf.paths.src, '/**/*.mock.js'),
+      // path.join(conf.paths.src, '/**/*.mock.js'),
     ])
     .concat(pathSrcHtml);
 }
@@ -48,10 +49,11 @@ module.exports = function(config) {
       whitelist: [path.join(conf.paths.src, '/**/!(*.html|*.spec|*.mock).js')]
     },
 
-    browsers : ['PhantomJS'],
+    browsers : ['Chrome'],
 
     plugins : [
       'karma-phantomjs-launcher',
+      'karma-chrome-launcher',
       'karma-angular-filesort',
       'karma-coverage',
       'karma-jasmine',
