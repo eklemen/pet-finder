@@ -1,16 +1,19 @@
 (function() {
-  'use strict';
+	'use strict';
 
-  describe('controllers', function(){
-    var vm;
+	describe('controllers', function(){
+		var vm, scope;
 
-    beforeEach(module('ekSites'));
-    beforeEach(inject(function(_$controller_) {
-      vm = _$controller_('MainController');
-    }));
+		beforeEach(module('ekSites'));
+		
+		beforeEach(inject(function($controller, $rootScope) {
+			scope = $rootScope.$new();
+			vm = $controller("MainController", {$scope: scope});
+		}));
 
-    it('should have a timestamp creation date', function() {
-      expect(true).toBe(true);
-    });
-  });
+		it('should expect location to be orlando,fl', function() {
+			expect(vm.location).toEqual('orlando,fl');
+		});
+
+	});
 })();
