@@ -9,6 +9,7 @@
 	/** @ngInject */
 	function GetPets($resource) {
 		// All requests are returned in JSON format as Array
+		// auth.getToken was not used since GET requests to the API do not require a token
 
 		var baseUrl = 'http://api.petfinder.com/';
 		var key = '?key=1f0c7f48315c13e63b7b7923cacc7959&format=json'
